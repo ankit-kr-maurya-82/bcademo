@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: blueviolet;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    gap: 12rem;
+    list-style: none;
+}
+
+footer{
+    background-color: rgb(70, 70, 71);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
