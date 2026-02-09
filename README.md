@@ -9,3 +9,4 @@ git switch master
 git merge master
 
 one more bug-fix
+add footer note
