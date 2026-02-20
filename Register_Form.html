@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body  style="color: white; background-color: rgb(130, 131, 131);">
+    <h1>Student Registration Form</h1>
+
+    <form action="#" method="post">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required />
+      <br /><br />
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" required />
+      <br /><br />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required />
+      <br /><br />
+
+      <span>Gender</span>
+      <input type="radio" id="male" name="gender" value="Male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="other">Other</label>
+      <br /><br />
+
+      <label for="fatherName">Father's Name</label>
+      <input type="text" id="fatherName" name="fatherName" required />
+      <br /><br />
+
+      <label for="className">Class</label>
+      <input type="text" id="className" name="className" required />
+      <br /><br />
+
+      <label for="percentage">Percentage</label>
+      <input
+        type="number"
+        id="percentage"
+        name="percentage"
+        min="0"
+        max="100"
+        step="0.01"
+        required
+      />
+      <br /><br />
+
+      <label for="course">Course</label>
+      <select id="course" name="course" required>
+        <option value="">Select Course</option>
+        <optgroup label="CS">
+          <option value="BCA">BCA</option>
+          <option value="MCA">MCA</option>
+        </optgroup>
+        <optgroup label="Technology">
+          <option value="BTech">BTech</option>
+          <option value="MTech">MTech</option>
+        </optgroup>
+        <optgroup label="Science">
+          <option value="BSc">BSc</option>
+          <option value="MSc">MSc</option>
+        </optgroup>
+        <optgroup label="Agriculture">
+          <option value="BSc Agriculture">BSc</option>
+          <option value="MSc Agriculture">MSc</option>
+        </optgroup>
+        <optgroup label="Law">
+          <option value="LLB">LLB</option>
+          <option value="LLM">LLM</option>
+        </optgroup>
+        <optgroup label="Commerce">
+          <option value="BCom">BCom</option>
+          <option value="MCom">MCom</option>
+        </optgroup>
+        <optgroup label="Arts">
+          <option value="BA">BA</option>
+          <option value="MA">MA</option>
+        </optgroup>
+      </select>
+      <br /><br />
+
+      <label for="mobile">Mobile</label>
+      <input
+        type="tel"
+        id="mobile"
+        name="mobile"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        placeholder="10-digit number"
+        required
+      />
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
